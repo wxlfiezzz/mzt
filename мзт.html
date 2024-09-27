@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Сумма ползунков с процентом</title>
+</head>
+<body>
+    <div class="container">
+        <h1>МИША ЗА ТВОРЧЕСТВО</h1>
+        <h2>ТЕКСТ/РИФМЫ/ПАНЧИ: <span id="value1">5</span></h2>
+            <input type="range" class="slider" id="slider1" value="5" min="0" max="10">
+        
+        <h2>КОНЦЕПТ: <span id="value2">5</span></h2>
+         <input type="range" class="slider" id="slider2" value="5" min="0" max="10">
+
+        <h2>РЕАЛИЗАЦИЯ: <span id="value3">5</span></h2>
+         <input type="range" class="slider" id="slider3" value="5" min="0" max="10">
+        
+        <h2>СТРУКТУРА: <span id="value4">5</span></h2>
+         <input type="range" class="slider" id="slider4" value="5" min="0" max="10">
+
+        <h2>АТМОСФЕРА: <span id="value5">5</span></h2>
+         <input type="range" class="slider" id="slider5" value="0" min="0" max="50"> <!-- Этот ползунок будет задавать процент -->
+        <h2>БЕЗ АТМОСФЕРЫ: <span id="sum">0</span></h2>
+        <h2>С АТМОСФЕРОЙ: <span id="result">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

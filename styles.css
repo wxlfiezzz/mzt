@@ -1,0 +1,45 @@
+body {
+    font-family: arial, sans-serif;
+    display: flex;
+    background-image: url("back.jpg");
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.slider {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    appearance: none; /* Убираем стандартный стиль */
+    width: 500px; /* Ширина ползунка */
+    height: 10px; /* Высота трека */
+    background: #ddd; /* Цвет фона трека */
+    border-radius: 15px; /* Закругление углов */
+    margin: 25px 0; /* Отступы между ползунками */
+}
+
+/* Стиль для ползунка */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    appearance: none; /* Убираем стандартный стиль */
+    width: 40px; /* Ширина ползунка */
+    height: 40px; /* Высота ползунка */
+    background-image: url('thumb.gif'); /* Замените на путь к вашей иконке */
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь ползунок */
+    cursor: pointer; /* Указатель на ползунке */
+}
+
+.slider::-moz-range-thumb {
+    width: 30px; /* Ширина ползунка */
+    height: 30px; /* Высота ползунка */
+    background-image: url('thumb.gif'); /* Замените на путь к вашей иконке */
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь ползунок */
+    cursor: pointer; /* Указатель на ползунке */
+}
